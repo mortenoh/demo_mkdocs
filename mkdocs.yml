@@ -14,7 +14,6 @@ theme:
     repo: fontawesome/brands/git-alt
 plugins:
   - search
-  - git-revision-date-localized
 markdown_extensions:
   - toc:
       permalink: true
