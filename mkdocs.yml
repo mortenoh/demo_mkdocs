@@ -1,3 +1,36 @@
 site_name: My Docs
+docs_dir: docs
+repo_name: mortenoh/demo_mkdocs
+repo_url: https://github.com/mortenoh/demo_mkdocs
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    primary: blue grey
+    accent: blue grey
+  icon:
+    repo: fontawesome/brands/git-alt
+plugins:
+  - search
+  - git-revision-date-localized
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.progressbar
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
+  - pymdownx.highlight
+nav:
+  - Home: "index.md"
+  - About:
+      - License: "about/license.md"
+      - Markdown: "about/markdown.md"
